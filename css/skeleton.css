@@ -565,15 +565,50 @@ a.fill-div {
 /* About
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-#about {
-    background-image: url(../images/about.jpg);
-    position: fixed;
-/*    width: auto;*/
-/*    height: 100%;*/
-    background-size: cover;
-    margin-top: 20px;
-    background-position: center;    
+/*
+.about-background img {
+    width: 100%;
+    position: relative;
+    right: 0;
+
 }
+*/
+
+#about {
+    width: 100%;
+/*
+    background-image: url(../images/about.jpg);
+    background-attachment: scroll;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    height: 100%;
+
+*/
+}
+
+/*
+#avatar {
+    padding: 200px 0;
+}
+*/
+
+#avatar h2 {
+    text-align: left;
+    padding: 10px 0 0 0;
+    color: #8DC63F;
+/*    position: relative;*/
+/*    top: 10px;*/
+/*    background-color: #8DC63F; */
+}
+
+#avatar p {
+    text-align: left;
+    padding: 10px 0 10px 0;
+    color: black;
+}
+
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -643,6 +678,16 @@ a.fill-div {
         text-align: right;
     }
 }
+
+/*
+@media (min-width: 600px) {
+    #avatar {
+        position: relative;
+        top: -400px;
+
+            }
+}
+*/
 
 /* Larger than mobile */
 @media (min-width: 750px) {
