@@ -21,8 +21,9 @@
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/main.css">
+
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/logo_small.png">
@@ -32,7 +33,7 @@
 
     <!-- Header
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div id="header">
+    <div id="header" class="animated fadeInDown">
         <div class="container">
             <div class="row">
                 <div class="one columns">
@@ -43,8 +44,8 @@
                 <div class="eleven columns">
                     <nav>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html"  class="selected">About</a></li>
+                            <li><a href="index.html" class="selected">Home</a></li>
+                            <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -56,23 +57,26 @@
     
      <!-- About
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->   
-    
-    <div class="container" >
-        <div class="row">
-            <div class="twelve columns">
-                <img src="images/about.jpg" id="about">
+    <div class="container">
+            <div class="row">
+                <div class="twelve columns" id="about-image">
+                    <img src="images/about.jpg">
+                </div>
             </div>
-        </div>
-        <div class="row" id="avatar">
-            <div class="twelve columns">
-                <h2>Kevin Cullen</h2>
-                <p>
-                    Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here. Info about me here.
-                </p>
+
+            <div class="row">
+                <div class="twelve columns" id="about-text">
+                    <h2>Kevin Cullen</h2>
+                    <p>INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here INFO here </p>
+                </div>
             </div>
-        </div>
     </div>
+
+
     
+    <!-- footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
     <div id="footer">
         <div class="container">
             <div class="row">
@@ -101,6 +105,10 @@
         </div>
     </div>
     
+
+
+
+
     
     
     
