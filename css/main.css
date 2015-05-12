@@ -80,13 +80,13 @@ html {
 
 #footer a {
     display: inline-block;
-    margin: 0 0 0 5px;
+/*    margin: 0 0 0 2px;*/
     
 }
 
 #icons {
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 #footer a img {
@@ -280,8 +280,13 @@ a.fill-div {
     width: 100%;
 }
 
-#about-text h2 {
+#about-h2 {
     color: #666666;
+}
+
+#about-h3 h3 {
+    font-weight: 400;
+    text-align: left;
 }
 
 #about-text p {
@@ -297,6 +302,9 @@ a.fill-div {
     #header nav ul {
         text-align: right;
     }
+    #about-h3 h3 {
+    text-align: right;
+}
 }
 
 /*
@@ -326,7 +334,6 @@ a.fill-div {
     }
     #icons {
     text-align: right;
-        padding-top: 10px;
     }
 }
 
