@@ -285,8 +285,9 @@ a.fill-div {
 }
 
 #about-h3 h3 {
-    font-weight: 400;
+    font-weight: 200;
     text-align: left;
+    font-size: 4.2rem;
 }
 
 #about-text p {
