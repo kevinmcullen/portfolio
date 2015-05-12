@@ -133,22 +133,48 @@ input[type="submit"] {
     margin-bottom: 20px;
 }
 
-#header nav ul {
+#header nav ul,
+#work-nav ul {
     margin: 10px 0 0;
     text-align: center;
 }
 
-#header nav ul li{
+#header nav ul li,
+#work-nav nav ul li {
     display: inline-block;
     margin: 0;
 }
 
-#header nav ul li a {    
+#header nav ul li a,
+#work-nav nav ul li a{    
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
     text-align: center;
-    padding: .4em 0 0 .4em;
+    padding: .4em 0 0 .6em;
+}
+
+#work-nav nav ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    padding: .6em .8em;
+    text-transform: none;
+}
+
+nav ul label {
+    font-size: 20px;
+    color: #666666;
+}
+
+a.button {
+    background-color: #8DC63F;
+    color: white;
+}
+
+a.button:hover {
+    background-color: #456048;
+    color: white;
+    border-color: #456048;
 }
 
 /* Work
@@ -248,6 +274,7 @@ a.fill-div {
 .work-link:hover a.fill-div {
     opacity: 1;
 }
+
 
 /* About
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
