@@ -9,6 +9,7 @@ html {
 
 .main-content {
     padding-bottom: 8em;
+    margin: 30px auto;
 }
 
 /*
@@ -177,6 +178,10 @@ a.button:hover {
     border-color: #456048;
 }
 
+#work-nav nav ul li {
+    margin
+}
+
 /* Work
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -196,13 +201,15 @@ a.button:hover {
     background-image: url(../images/web.jpg);
 }
 
+/*
 .work {
     margin: 30px 0;
-/*
-    animation-delay: 3s;
-    -webkit-animation-delay: 3s;
-*/
 }
+
+.about {
+    margin: 30px auto;
+}
+*/
 
 /* Link Divs */
 
