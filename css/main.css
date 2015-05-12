@@ -200,6 +200,11 @@ a.fill-div {
     transition: opacity .25s ease-in-out;
 }
 
+a.fill-div.individual {
+    width: 100%;
+    height: auto;
+}
+
 
 /* transition styles */
 
@@ -246,6 +251,11 @@ a.fill-div {
 .work-link:hover a.fill-div {
     opacity: 1;
 }
+
+/* About
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
 
 
 /* About
