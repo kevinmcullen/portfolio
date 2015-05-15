@@ -138,6 +138,10 @@ input[type="reset"] {
     border-color: #8DC63F;
 }
 
+input[type="reset"]:hover {
+    border-color: #456048;
+}
+
 #header .columns div {
     text-align: center;
 /*    min-width: 100%;*/
@@ -217,8 +221,7 @@ input[type="reset"] {
     max-width: 60%;
 }
 
-/* Work
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Work Section */
 
 #newspaper-design {
     background-image: url(../images/newspaper.jpg);
@@ -258,9 +261,6 @@ a.fill-div {
     opacity: 0;
     transition: opacity .25s ease-in-out;
 }
-
-
-
 
 /* transition styles */
 
@@ -309,8 +309,7 @@ a.fill-div {
 }
 
 
-/* About
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* About Page */
 
 
 .work-image img {   

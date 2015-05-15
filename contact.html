@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,14 +55,14 @@
                         <p>twitter: <a href="https://twitter.com/KevinMCullen">@kevinmcullen</a></p>
                         <p><strong>I am available for freelance work.</strong><br>Contact me for quotes or to discuss a project.</p>        
                     </div>
-                    <div class="eight columns">
+                    <!--<div class="eight columns">
                         <h3>Feel free to say hello!</h3>
                         <form action="MAILTO:kevin@kevincullen.me" method="post" enctype="text/plain">
-                                <!--
+                                
                             <input type="text" name="name" placeholder="your name"><br>
                             E-mail:<br>
                             <input type="text" name="mail" placeholder="your email"><br>
-                            Comment:<br>-->
+                            Comment:<br>
                             <div class="row">
                                 <div class="row">
                                     <div class="six columns">
@@ -78,8 +79,80 @@
                               <textarea class="u-full-width" placeholder="Hi Kevin …" id="exampleMessage"></textarea>
                             <input type="submit" value="Send">
                             <input type="reset" value="Reset">
-                        </form>
-                    </div>
+                        </form> 
+                    </div>-->
+                    
+                    
+<div class="eight columns">
+    <h3>Feel free to say hello!</h3>
+        <?php
+    //init variables
+    $cf = array();
+    $sr = false;
+
+    if(isset($_SESSION['cf_returndata'])){
+        $cf = $_SESSION['cf_returndata'];
+        $sr = true;
+    }
+    ?>
+    <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+        <li id="info">There were some problems with your form submission:</li>
+        <?php 
+        if(isset($cf['errors']) && count($cf['errors']) > 0) :
+            foreach($cf['errors'] as $error) :
+        ?>
+        <li><?php echo $error ?></li>
+        <?php
+            endforeach;
+        endif;
+        ?>
+    </ul>
+    <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP!</p>
+    <form method="post" action="process.php">
+        <div class="row">
+            <div class="six columns">
+                <label for="name">Your name <span class="required">*</span></label>
+                <input class="u-full-width" type="text" id="name" value="" placeholder="So I know who you are" required="required" autofocus="autofocus">
+            </div>
+            <div class="six columns">
+                <label for="email">Your email <span class="required">*</span></label>
+                <input class="u-full-width" type="email" id="email" value="" placeholder="test@mailbox.com" require="required">
+            </div>
+        </div>
+        
+        <label for="message">Message <span class="required">*</span></label>
+        <textarea class="u-full-width" id="message" name="message" placeholder="Hi Kevin ..." required="required" data-minlength="20"></textarea>        
+
+        <span id="loading"></span>        
+        <input type="submit" value="Send" id="submit-button"/>
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    </form>
+</div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     <div class="row" id="work-nav">
                         <div class="twelve columns animated fadeUpBottomBig">
                             <nav>
