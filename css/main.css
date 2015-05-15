@@ -9,7 +9,7 @@ html {
 
 .main-content {
     padding-bottom: 8em;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 
@@ -167,7 +167,7 @@ input[type="reset"] {
     position: absolute;
     bottom: 0;
     height: 8em;
-    margin-top: 8em;
+    margin-top: 2em;
     width: 100%;
 }
 
@@ -256,7 +256,7 @@ input[type="reset"] {
     width: 100%;
     height: 300px;
     background-size: cover;
-    margin-top: 20px;
+    margin-bottom: 20px;
     background-position: center;
 }
 
