@@ -213,7 +213,7 @@ input[type="reset"] {
     text-align: center;
     padding: .6em 0 .4em .2em;
     width: 40px;
-    height: 4;
+/*    height: 4;*/
 }
 
 #footer a img {
@@ -402,6 +402,22 @@ a.fill-div {
     }
     #header .five.columns  {
     text-align: inherit;
+    }
+}
+
+@media (min-width: 880px) {
+    h1 {
+        font-size: 40px;
+        margin: 24.5px 0;
+    }
+        #header nav ul li {
+/*        margin: 34.5px 0;*/
+        line-height: 20px;
+/*        font-size: 20px;*/
+    }
+    #header nav ul li a {
+        font-size: 20px;
+        text-align: right;
     }
 }
 
