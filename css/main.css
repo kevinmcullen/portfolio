@@ -12,16 +12,14 @@ html {
     margin: 20px auto;
 }
 
-
-
-
-
-
-
 a {
     color: #8DC63F;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.selected {
+    color: #456048;
 }
 
 h3 {
@@ -42,14 +40,8 @@ input[type="submit"]:hover {
     border-color: #456048;
 }
 
-#contact-info a {
-    text-transform: none;
-    font-weight: 600;
-}
 
-#contact-info p {
-    margin-bottom: .8em;
-}
+
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -109,6 +101,8 @@ h1 {
     padding: .2em;
 }
 
+/*work-nav buttons*/
+
 #work-nav nav ul li a {
     font-weight: 400;
     font-size: 16px;
@@ -138,11 +132,7 @@ a.button:hover {
     border-color: #456048;
 }
 
-/*
-#work-nav nav ul li {
-    margin
-}
-*/
+
 
 input[type="reset"] {
     border-color: #8DC63F;
@@ -152,6 +142,17 @@ input[type="reset"] {
     text-align: center;
 /*    min-width: 100%;*/
     margin-left: 0;
+}
+
+/*Contact page*/
+
+#contact-info a {
+    text-transform: none;
+    font-weight: 600;
+}
+
+#contact-info p {
+    margin-bottom: .8em;
 }
 
 /* Footer
@@ -235,15 +236,6 @@ input[type="reset"] {
     background-image: url(../images/web.jpg);
 }
 
-/*
-.work {
-    margin: 30px 0;
-}
-
-.about {
-    margin: 30px auto;
-}
-*/
 
 /* Link Divs */
 
@@ -334,11 +326,7 @@ a.fill-div {
     text-align: center;
     text-transform: none;
 }
-    
 
-
-/* About
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #about {
     padding-top: -20px;
@@ -362,6 +350,7 @@ a.fill-div {
     color: #666666;
 }
 
+/*Responsive*/
 
 @media (min-width: 550px) {
     #footer nav {
@@ -433,49 +422,3 @@ a.fill-div {
     }
     
 }
-
-/*
-@media (min-width: 600px) {
-    #avatar {
-        position: relative;
-        top: -400px;
-
-            }
-}
-*/
-
-
-/* Larger than mobile */
-/*
-@media (min-width: 750px) {
-
-    #header nav ul {
-*/
-/*    margin: 71px 0 0 0;*/
-/*
-    text-align: right;
-    }
-    #footer {
-        padding-top: 0;
-    }
-    #footer p {
-        margin-top: -30px;
-    }
-    #footer nav {
-        text-align: left;
-    }
-    #icons {
-    text-align: right;
-    }
-}
-*/
-
-
-
-.selected {
-    color: #456048;
-}
-
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
