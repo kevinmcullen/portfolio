@@ -154,7 +154,7 @@ input[type="reset"] {
 
 #header .columns div {
     text-align: center;
-    min-width: 100%;
+/*    min-width: 100%;*/
     margin-left: 0;
 }
 
@@ -187,7 +187,7 @@ input[type="reset"] {
 #footer nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     padding: .4em .4em .4em 0;    
 }
@@ -367,7 +367,14 @@ a.fill-div {
 }
 
 
-
+@media (min-width: 550px) {
+    #footer nav {
+        text-align: left;
+    }
+    #icons {
+        text-align: right;
+    }
+}
 
 
 /* Larger than mobile */
@@ -376,27 +383,39 @@ a.fill-div {
 
     #header nav ul {
         text-align: right;
-        margin: 73px 0 35.5px 0;
+        margin: 36.5px 0;
         line-height: 16px;
     }
     #header nav ul li a {
-        font-size: 14px;
+        font-size: 16px;
         text-align: right;
     }
     h1 {
         text-align: left;  
         font-size: 30px;
-        margin: 24.5px 0;
+        margin: 29.5px 0;
+        padding-top: 0;
+        margin-left: 16px;
     }
     #about-h3 h3 {
     text-align: right;
     }
-    #header .columns div {
-/*    min-width: initial;*/
+    #header .five.columns  {
     text-align: inherit;
-/*    margin-left: 4%;*/
     }
+}
 
+@media (min-width: 1000px) {
+    #header nav ul li {
+/*        margin: 34.5px 0;*/
+        line-height: 20px;
+/*        font-size: 20px;*/
+    }
+    #header nav ul li a {
+        font-size: 20px;
+        text-align: right;
+    }
+    
 }
 
 /*
