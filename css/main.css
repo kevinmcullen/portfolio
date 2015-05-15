@@ -69,18 +69,14 @@ h1 {
 }
 
 #head-styling {
-    color: #666666;
+    color: #B3B3B3;
 }
 
 #header a {
     text-align: center;
 }
 
-.logo img {
-   text-align: center;
-    position: relative;
-    margin: 0 auto;
-}
+
 
 #header {
     background-color: white;
@@ -379,7 +375,13 @@ a.fill-div {
 
 /* Larger than mobile */
 @media (min-width: 700px) {
+    .logo a img {
+        text-align: left;
+    }
     
+    #header a {
+        text-align: inherit;
+    }
 
     #header nav ul {
         text-align: right;
@@ -400,7 +402,7 @@ a.fill-div {
     #about-h3 h3 {
     text-align: right;
     }
-    #header .five.columns  {
+    #header .columns div  {
     text-align: inherit;
     }
 }
@@ -427,9 +429,7 @@ a.fill-div {
         line-height: 20px;
 /*        font-size: 20px;*/
     }
-    #header nav ul li a {
-        font-size: 20px;
-        text-align: right;
+
     }
     
 }
