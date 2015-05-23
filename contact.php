@@ -1,4 +1,4 @@
-<?php session_start() ?>
+<!--<?php session_start() ?>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +50,7 @@
             <div class="container animated fadeInUpBig">
                 <div class="row">
                     <div class="four columns" id="contact-info">
-                        <p>email: <a href="mailto:kevin@kevincullen.com">kevin@kevincullen.com</a></p>
+                        <p>email: <a href="mailto:kevin@kevincullen.com">kevin@kevincullen.me</a></p>
                         <p>phone: <a href="callto:575-6353891">575.635.3891</a></p>
                         <p>twitter: <a href="https://twitter.com/KevinMCullen">@kevinmcullen</a></p>
                                
@@ -59,6 +59,47 @@
                     <div class="eight columns">
                     <h3>Feel free to drop me a line.</h3>
                      <p><strong>I am available for freelance work.</strong><br>Please don't hesitate to contact me to discuss a project and how I can help. I'd love to hear from you.</p>
+                        <div >
+                            <?php
+                                $name = $_POST['name'];
+                                $email = $_POST['email'];
+                                $message = $_POST['message'];
+                                $from = 'From: Kevin Cullen Design'; 
+                                $to = 'kevin@kevincullen.mem'; 
+                                $subject = 'Hello';
+                                $human = $_POST['human'];
+
+                                $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+                                if ($_POST['submit'] && $human == '4') {				 
+                                    if (mail ($to, $subject, $body, $from)) { 
+                                    echo '<p>Your message has been sent!</p>';
+                                } else { 
+                                    echo '<p>Something went wrong, go back and try again!</p>'; 
+                                } 
+                                } else if ($_POST['submit'] && $human != '4') {
+                                echo '<p>You answered the anti-spam question incorrectly!</p>';
+                                }
+                            ?>
+                            <form method="post" action="contact.php" enctype="text/plain">
+                                <div class="row">                                    
+                                    <div class="six columns">
+                                        <label for="exampleNameInput">Your name</label>
+                                        <input name="name" class="u-full-width" type="text" placeholder="Your name" id="exampleNameInput">
+                                    </div>
+                                    
+                                    <div class="six columns">
+                                            <label for="exampleEmailInput">Your email</label>
+                                            <input name="email" class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                                    </div>
+                                </div>
+                                
+                                <label for="exampleMessage">Message</label>
+                                  <textarea name="message" class="u-full-width" placeholder="Hi Kevin …" id="exampleMessage"></textarea>
+                                <input name="submit" type="submit" value="Submit">
+                                <input name="reset" type="reset" value="Reset">
+                            </form> 
+                        </div>    
                     </div>
                     <!--<div class="eight columns">
                         <h3>Feel free to say hello!</h3>
@@ -88,51 +129,7 @@
                     </div>-->
                     
                     
-<!--<div class="eight columns">
-    <h3>Feel free to say hello!</h3>
-        <?php
-    //init variables
-    $cf = array();
-    $sr = false;
 
-    if(isset($_SESSION['cf_returndata'])){
-        $cf = $_SESSION['cf_returndata'];
-        $sr = true;
-    }
-    ?>
-    <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
-        <li id="info">There were some problems with your form submission:</li>
-        <?php 
-        if(isset($cf['errors']) && count($cf['errors']) > 0) :
-            foreach($cf['errors'] as $error) :
-        ?>
-        <li><?php echo $error ?></li>
-        <?php
-            endforeach;
-        endif;
-        ?>
-    </ul>
-    <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message! We will get back to you ASAP!</p>
-    <form method="post" action="process.php">
-        <div class="row">
-            <div class="six columns">
-                <label for="name">Your name <span class="required">*</span></label>
-                <input class="u-full-width" type="text" id="name" value="" placeholder="So I know who you are" required="required" autofocus="autofocus">
-            </div>
-            <div class="six columns">
-                <label for="email">Your email <span class="required">*</span></label>
-                <input class="u-full-width" type="email" id="email" value="" placeholder="test@mailbox.com" require="required">
-            </div>
-        </div>
-        
-        <label for="message">Message <span class="required">*</span></label>
-        <textarea class="u-full-width" id="message" name="message" placeholder="Hi Kevin ..." required="required" data-minlength="20"></textarea>        
-
-        <span id="loading"></span>        
-        <input type="submit" value="Send" id="submit-button"/>
-        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
-    </form>
-</div>-->       
                     <div class="row" id="work-nav">
                         <div class="twelve columns animated fadeUpBottomBig">
                             <nav>

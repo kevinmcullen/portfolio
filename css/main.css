@@ -68,8 +68,6 @@ h1 {
     text-align: center;
 }
 
-
-
 #header {
     background-color: white;
     padding: 16px 0 0;
@@ -213,12 +211,21 @@ input[type="reset"]:hover {
 #icons a {
     text-align: center;
     padding: .6em 0 .4em .2em;
-    width: 40px;
+    width: 30px;
 /*    height: 4;*/
 }
 
+
+ 
+
 #footer a img {
-    max-width: 60%;
+    max-width: 80%;
+    opacity: .9;
+}
+
+#footer a img:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 /* Work Section */
