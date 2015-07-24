@@ -23,7 +23,8 @@ a {
 }
 
 h3 {
-    color: #666666;    
+    color: #666666; 
+    margin-bottom: 1.5rem;
 }
 
 input[type="submit"] {
@@ -157,6 +158,49 @@ input[type="reset"]:hover {
     margin-bottom: .8em;
 }
 
+.error {
+    background-color: red;
+    padding: 0 8px;
+    border-radius: 8px;
+    margin: 0 0 10px 10px;
+    color: white;
+    font-size: 12px;
+    opacity: 0;
+}
+
+#successMessage,
+#failureMessage {
+    padding: 25px;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+#successMessage p,
+#failureMessage p {
+    margin: 0;
+}
+
+#successMessage h3,
+#failureMessage h3 {
+    color: white;
+}
+
+#successMessage {
+    background-color: #8DC63F;
+}
+
+#failureMessage {
+    background-color: #C61712;
+}
+
+
+
+
+
+
+
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -214,17 +258,21 @@ input[type="reset"]:hover {
     width: 30px;
 /*    height: 4;*/
 }
-
+ 
 
  
 
 #footer a img {
     max-width: 80%;
-    opacity: .9;
+/*    opacity: .9;*/
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 #footer a img:hover {
-    opacity: 1;
+/*    opacity: 1;*/
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
     transform: scale(1.1);
 }
 

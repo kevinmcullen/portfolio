@@ -8,8 +8,6 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,600,300,400,700,900' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/contactForm.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/skeleton.css">
@@ -59,28 +57,28 @@
                     </div>
                     
                     <div class="eight columns">
-                        <h3>Feel free to drop me a line.</h3>
-                        <p><strong>I am available for freelance work.</strong><br>Please don't hesitate to contact me to discuss a project and how I can help. I'd love to hear from you.</p>
-                        <form action="php/mail.php" method="post" class="contactForm">
+                        <div id="successMessage">
+                            <h3>Thanks for your message!</h3>
+                            <p><strong>I appreciate you getting in touch!</strong><br>I'll get back to you as quickly as possible. If you forgot to mention something or need to shoot me another email, just use the form below:</p>
+                        </div>
+                        <form action="php/mail.php" method="post">
                             <div class="row">
                                 <div class="six columns">
-                                    <label for="contactName">Name*<span class="error"> Please enter your name.</span></label>
-                                    <input type="text" name="name" placeholder="John Doe" class="u-full-width" id="contactName">
+                                    <label>Name</label>
+                                    <input type="text" name="name" placeholder="John Doe" class="u-full-width">
                                 </div>
                                 <div class="six columns">
-                                    <label>Email*<span class="error"> A valid email is required.</span></label>
+                                    <label>Email</label>
                                     <input type="text" name="email" placeholder="email@site.com" class="u-full-width">
                                 </div>
-                            </div>                            
-                            <div>
-                                <label>Message*<span class="error">A message is required.</span></label>
-                                <textarea  name="message" class="u-full-width" placeholder="Hi Kevin ..."></textarea>
                             </div>
+                            <label>Message</label>
+                            <textarea  name="message" class="u-full-width" placeholder="Hi Kevin ..."></textarea>
                             <input type="submit" value="Send">
                             <input type="reset" value="Clear">
-                            <p>*Required field</p>
-                        </form> 
-                    </div> 
+                        </form>     
+                    </div>
+                   
                     
                     
 
