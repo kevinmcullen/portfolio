@@ -16,6 +16,7 @@ a {
     color: #8DC63F;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 
 .selected {
@@ -267,6 +268,7 @@ input[type="reset"]:hover {
 /*    opacity: .9;*/
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: all .3s ease-in-out;
 }
 
 #footer a img:hover {
