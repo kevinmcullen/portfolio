@@ -12,6 +12,10 @@ html {
     margin: 20px auto;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 a {
     color: #8DC63F;
     text-transform: uppercase;
@@ -26,6 +30,17 @@ a {
 h3 {
     color: #666666; 
     margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-family: 'Titillium Web', HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.work h4 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 input[type="submit"] {
@@ -77,6 +92,10 @@ h1 {
 /*    margin-bottom: 20px;*/
 }
 
+#work-nav {
+  margin-top: 60px;
+}
+
 #header nav ul,
 #work-nav ul {
 /*    margin: 20px 0 0;*/
@@ -102,6 +121,8 @@ h1 {
 }
 
 /*work-nav buttons*/
+
+
 
 #work-nav nav ul li a {
     font-weight: 400;
@@ -293,8 +314,10 @@ input[type="reset"]:hover {
 }
 
 #web-design {
-    background-image: url(../images/web.jpg);
+    background-image: url(../images/web/MFTAmockup.jpg);
 }
+
+
 
 
 /* Link Divs */
@@ -406,6 +429,32 @@ h3 {
     color: #666666;
 }
 
+
+
+/******************************
+Web Design Page
+******************************/
+
+.webHero img {
+  position: relative;
+  max-width: 90%;
+  margin: 40px auto 10px;
+  display: block;
+}
+
+.webDesign p {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webDesign a {
+  text-transform: none;
+  font-weight: 700;
+}
+
+
+
 /*Responsive*/
 
 @media (min-width: 550px) {
@@ -450,6 +499,9 @@ h3 {
     #header .columns div  {
     text-align: inherit;
     }
+    .webDesign p {
+      max-width: 60%;
+    }
 }
 
 @media (min-width: 880px) {
@@ -478,3 +530,5 @@ h3 {
     }
     
 }
+
+
