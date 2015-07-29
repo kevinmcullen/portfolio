@@ -57,7 +57,9 @@ input[type="submit"]:hover {
     border-color: #456048;
 }
 
-
+.logo img {
+  max-width: 25%;
+}
 
 
 /* Sections
@@ -469,6 +471,12 @@ Web Design Page
 
 /* Larger than mobile */
 @media (min-width: 700px) {
+  
+    .logo img {
+      max-width: 90%;
+    }
+  
+  
     .logo a img {
         text-align: left;
     }
