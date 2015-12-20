@@ -183,9 +183,9 @@ input[type="reset"]:hover {
 }
 
 .error {
-    background-color: red;
+    background-color: rgba(200, 70, 70, .8);
     padding: 0 8px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin: 0 0 10px 10px;
     color: white;
     font-size: 12px;
@@ -444,15 +444,70 @@ Web Design Page
   display: block;
 }
 
-.webDesign p {
+/* .webDesign p {
   max-width: 80%;
-  margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .webDesign a {
   text-transform: none;
   font-weight: 700;
+}
+
+/*project*/
+
+
+.project {
+  text-align: center;
+}
+
+.project.intro p {
+  font-size: 1.4em;
+  margin: 0 auto 3em;
+}
+
+.project label {
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+.project h5 {
+  font-weight: 200;
+  letter-spacing: .1em;
+}
+
+.project img {
+  max-width: 100%;
+  margin-right: auto;
+  text-align: right;
+}
+
+.project h6 {
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+
+
+.project.brief {
+  color: #fff;
+  background-color: #333;
+  padding: 2em 0;
+  margin-bottom: 3em;
+}
+
+.project.brief p {
+  max-width: 50%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+
+.project.second {
+  text-align: left;
+  padding-bottom: 3em;
+  margin-bottom: 10em;
+  border-bottom: 14px solid #8DC63F;
 }
 
 
