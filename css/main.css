@@ -439,7 +439,7 @@ Web Design Page
 
 .webHero img {
   position: relative;
-  max-width: 90%;
+  max-width: 800px;
   margin: 40px auto 10px;
   display: block;
 }
